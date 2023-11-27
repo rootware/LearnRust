@@ -17,8 +17,7 @@ fn main() {
 
     // Is there an easier way to convert the f64 diagonal into a Complex valued array?
     let h0 = (Array2::from_diag(&diagonal)).mapv(|x| Complex64::from(x));
-    let h2 : Array::<Complex<f64>>= Array::linspace(-max_state, max_state, N_STATES);
-    println!("{}", h2);
+
     let mut h1 = Array::from_elem((N_STATES,N_STATES), Complex64::new(0.0,0.0)); //Doing zeros with Complex led to an error
     // Basically, how do I call zeros while also defining the data type to be Complex64
 
