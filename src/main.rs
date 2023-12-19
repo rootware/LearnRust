@@ -9,8 +9,8 @@ const FREQ : f64 = 20.0; //Sets time for RK in divisions of PI
 
 
 fn main() {
-#[allow(unused_mut)]
-#[allow(unused_variables)]
+
+
     let max_state = (N_STATES as f64)-1.0 ; // My states range from max_state to -max_state
 
     let diagonal = Array::linspace(-max_state, max_state, N_STATES);
